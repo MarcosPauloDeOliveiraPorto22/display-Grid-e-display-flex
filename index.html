@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,40 @@
     <title>Display Flexbox e Display Grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Display Grid</h1>
+    <h1>Display Grid </h1>
+    <div id="contener">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <main id="code">
+            <pre><code>* {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #contener {
+        background-color: #333;
+        border: 3px solid red;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 100px auto 50%;
+        grid-template-rows: 70% 30%;
+        gap: 10px;
+        height: 35vh;
+        }
+        
+        #contener div{
+        background: #CCC;
+        border: 1px solid blue;
+        padding: 10px;
+        }
+</code></pre>
+        </main>
+    </div>
 </body>
+
 </html>
